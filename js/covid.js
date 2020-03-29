@@ -4,5 +4,4 @@ $.getJSON("https://corona.lmao.ninja/countries/Canada", function(data) {
     $("#recoveries").html(data.recovered);
     $("#newCases").html(data.todayCases);
     $("#newDeaths").html(data.todayDeaths);
-    $("#perMillionCases").html(data.casesPerOneMillion);
 });
