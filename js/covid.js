@@ -37,7 +37,7 @@ $("g").on("click", function() {
             console.log(data["timeline"]["cases"]);
             
             if (data["timeline"]["cases"][today] == undefined) {
-                $("#province").html("As of right now, there have been no reported cases or deaths in <span>" + province + "</span> today.");
+                $("#province").html("At the moment, the numbers of COVID-19 cases or deaths in <span>" + province + "</span> have not been published.");
                 $("#province2").html("In total, there have been <span>" + data["timeline"]["cases"][yesterday] + "</span> cases and <span>" + data["timeline"]["deaths"][yesterday] + "</span> deaths in <span>" + province + "</span>.");
                 $("#province3").html("Approximately " + parseFloat(data["timeline"]["cases"][yesterday] / totalCases * 100).toFixed(2) + "% of Canada's total cases are in <span>" + province + "</span>.");    
             } else {
