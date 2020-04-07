@@ -36,3 +36,20 @@ h2 {
 p a {
     color: #0074D9;
 }
+  
+#canada-map {
+    fill: #dddddd;
+}
+
+#canada-map g {
+    transition: 0.3s;
+}
+
+#canada-map g:hover {
+    fill: #ff4136;
+    cursor: pointer;
+}
+
+.active, .active:hover {
+    fill: #ff4136 !important;
+}
