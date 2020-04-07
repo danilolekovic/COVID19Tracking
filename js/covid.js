@@ -29,6 +29,7 @@ $("g").on("click", function() {
 
         $("#province").html("Today, there have been <span><img src='./img/loading.gif' alt='...'></span> reported cases and <span><img src='./img/loading.gif' alt='...'></span> deaths in <span>" + province + "</span>.");
         $("#province2").html("In total, there have been <span><img src='./img/loading.gif' alt='...'></span> cases and <span><img src='./img/loading.gif' alt='...'></span> deaths in <span>" + province + "</span>.");
+        $("#province3").html("Approximately <span><img src='./img/loading.gif' alt='...'></span>% of Canada's total cases are in <span>" + province + "</span>.");    
 
         $.getJSON("https://corona.lmao.ninja/v2/historical/CA/" + province.split(" ").join("%20") + "?lastdays=2", function(data) {
             console.log(yesterday);
