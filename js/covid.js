@@ -1,6 +1,6 @@
 let totalCases = undefined;
 
-$.getJSON("https://corona.lmao.ninja/countries/Canada", function(data) {
+$.getJSON("https://corona.lmao.ninja/v2/countries/Canada", function(data) {
     totalCases = data.cases;
     $("#confirmed").html(data.cases);
     $("#deaths").html(data.deaths);
