@@ -53,3 +53,17 @@ p a {
 .active, .active:hover {
     fill: #ff4136 !important;
 }
+
+#twitter {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+#twitter-link {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-left: 1em;
+    margin-top: 1em;
+}
